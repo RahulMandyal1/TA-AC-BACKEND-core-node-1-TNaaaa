@@ -16,7 +16,6 @@ console.log(`version of the os is ${os.version()}`);
 
 // get first  the fs module
 let fs = require('fs');
-const { stringify } = require('querystring');
 //   1. area.js
 fs.writeFileSync('area.js' ,'');
 //   2. app.js
