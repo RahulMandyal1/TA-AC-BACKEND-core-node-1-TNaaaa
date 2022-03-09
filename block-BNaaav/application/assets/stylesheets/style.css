@@ -1,0 +1,975 @@
+/* css reset starts here  */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* css reset ends here  */
+/* custom css starts here  */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Poppins',sans-serif;
+}
+body p{
+    color: grey;
+    line-height: 2;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px ;
+}
+
+
+i{
+    font-size: 16px;
+    color: #fff;
+}
+section{
+    width: 100%;
+    padding: 0  14% ;
+}
+.flex{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.btn{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px  24px ;
+    background: #F9646B;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+.center{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.middel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-heading{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+    color: #181D34;
+}
+.subheading{
+    font-size: 40px;
+    color: #111;
+    font-weight: 700;
+
+}
+
+::placeholder{
+    font-family: 'Poppins',sans-serif;
+}
+/* Header starts  here  */
+
+/* Secondary Navigation starts here  */
+header .secondary-navigation{
+    width: 100%;
+    background-color:#012D5B;
+    padding: 16px 11%;
+}
+header .secondary-navigation a{
+    font-size: 16px;
+    text-transform: none;
+}
+header .secondary-navigation a{
+    color: #fff;
+}
+header .secondary-navigation address{
+    width: 50%;
+
+}
+header i{
+    color: #fff;
+}
+.social-links a{
+    margin:  0 0  0 16px;
+}
+/* Secondary navigation ends here  */
+
+/* Primary Navigation starts here  */
+header .Primary-navigation{
+    width: 100%;
+    padding: 16px 11%;
+}
+header .Primary-navigation .navigation-menus ul{
+    margin:  0 100px 0 0 ;
+}
+header .Primary-navigation .navigation-menus ul li{
+    margin-left: 16px;
+}
+header .Primary-navigation .navigation-menus ul li a{
+    color: #012d5b;
+    font-weight:600;
+}
+header .Primary-navigation .navigation-menus ul li a:hover{
+    color: #F9646B;
+}
+
+/* Primary Navigation ends here  */
+
+/* header ends here  */
+
+
+/* home section starts here  */
+#home-container{
+    width: 100%;
+    height: 90vh;
+    background: url('../media/hero/h1_hero.jpg');
+    background-size:cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap:wrap ;
+    
+}
+#home-container .homecontent-container{
+    color: #F9646B;
+}
+#home-container .homecontent-container h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: #012D5B;
+}
+#home-container .homecontent-container a{
+    margin: 20px 0 0 0;
+}
+
+/* home section ends here  */
+
+/* About section starts here  */
+#About-section{
+    width: 100%;
+    background:rgba(246,249, 255, 1);
+    padding: 6% 14%;
+}
+#About-section  .about-container{
+    width: 100%;
+    align-items: flex-start;
+}
+#About-section  .about-container article{
+    width: 30%;
+}
+#About-section  .about-container article figure img{
+    width:100%;
+    height: 100%;
+}
+#About-section  .about-container article h2{
+    font-size: 24px;
+    color: #111;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+#About-section  .about-container .about-card{
+    min-width: 30%;
+    height: 100%;
+    border: 5px solid #F9646B;
+    padding: 20px;
+}
+#About-section  .about-container .about-card  header h2{
+    font-size: 40px;
+    color: #111;
+    font-weight: 700;
+}
+
+#About-section  .about-container .about-card  hr{
+    width: 35%;
+    margin: 10px 0px;
+    height: 4px;
+    border: none;
+    background-color: #F9646B;
+
+}
+#About-section  .about-container .about-card .card-btn a{
+    margin: 16px  0 0 0;
+    color: #000;
+}
+/* About section ends here  */
+
+/* About section  2 starts  here  */
+.About-article-container{
+    width: 100%;
+    padding: 6% 14%;
+}
+.About-article-container .article-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.About-article-container .article-container  .article-image{
+    width: 50%;
+
+}
+.About-article-container article  .article-image img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.About-article-container article .article-content{
+    position: absolute;
+    width: 50%;
+    height: auto;
+    background: linear-gradient( to right,rgba(255,255,255,.8),rgba(255,255,255,1));
+    left: 460px;
+    bottom: 7px;
+    padding: 30px 20px;
+}
+.About-article-container article .article-content .article-btn{
+    margin: 20px 0 0  0;
+}
+/* About section  2 ends here  */
+
+/* Services section starts here  */
+.services-section{
+    width: 100%;
+    padding: 6% 14%;
+    
+}
+.services-section h2{
+    margin:  0 0 60px 0;
+}
+.servies-container .service-card{
+    width: 32%;
+    height: auto;
+    background:#F6F9FE;
+    padding: 20px;
+    text-align: center;
+    padding: 40px;
+}
+
+.servies-container .service-card .service-content h5{
+    margin: 16px 0 16px 0;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+ .more-services{
+    
+    margin:  80px 0 0 0;
+    justify-content: center;
+}
+
+.ghost-btn{
+    background-color: transparent;
+    border: 2px solid #F9646B;
+    color: #F9646B;
+    text-transform: capitalize;
+    margin:  30px 0 0 0;
+}
+.ghost-btn:hover{
+    background: #F9646B;
+    color: #fff;
+}
+/* Services   section ends here  */
+
+/* Case section starts here  */
+#Case-section{
+    width: 100%;
+    height: auto;
+    padding: 10% 14%;
+    position: relative;
+    background: #F6F9FE;
+}
+
+.Case-wrapper .case-container{
+    width: 100%;
+    height: 100%;
+}
+.Case-wrapper .case-container .article-content{
+    width:40%;
+    height: auto;
+    /* background-color: blue; */
+}
+/* .Case-wrapper .case-container .article-content .case-btn{
+    margin: 16px  0 0  0;
+} */
+.Case-wrapper .case-container .article-image{
+    width: 50%;
+    height:348px;
+    position: absolute;
+    right: 10px;
+}
+.Case-wrapper .case-container .article-image img{
+    width: 44%;
+    height: 100%;
+    object-fit: cover;
+}
+.Case-wrapper .case-container .article-image .last-child{
+    width: 10%;
+    background-position-x: ;
+}
+
+/* Case section ends here  */
+
+/* Review  accordian   section starts   here  */
+#Testimonials{
+    width: 100%;
+    height: auto;
+    padding: 6% 14% ;
+}
+
+ #Testimonials .slider-icon i{
+     color: grey;
+ }
+#Testimonials .Testimonial-container{
+    width: 75%;
+    text-align: center;
+}
+
+#Testimonials .Testimonial-container .testimonial-text p{
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    margin: 16px 0 ;
+}
+#Testimonials .Testimonial-container .review-stars i{
+    color: #FBBA42;
+    margin:  0 0 16px 0;
+}
+#Testimonials .Testimonial-container .username-brandname  h5{
+    font-weight: 500;
+}
+}
+#Testimonials .Testimonial-container .username-brandname  h5 a{
+    color: #F9646B;
+}
+/* Review accordian section ends here  */
+
+ /* Recent News  section starts here  */
+#Recent-News{
+    width: 100%;
+    padding:8% 14%;
+    height: auto;
+    
+}
+#Recent-News .section-heading{
+    margin: 0 0 60px 0;
+}
+#Recent-News .recent-news-container {
+    width:100%;
+    height:auto;
+}
+#Recent-News .recent-news-container .recent-news-box{
+    width: 30%;
+    height: auto;
+    
+}
+#Recent-News .recent-news-container .recent-news-box .featured-image{
+    width: 100%;
+    height: 200px;
+}
+#Recent-News .recent-news-container .recent-news-box .featured-image img{
+    width: 100%;
+    object-fit: cover;
+}
+#Recent-News .recent-news-container .recent-news-box .post-category{
+    margin: 32px 0 0 0 ;
+}
+#Recent-News .recent-news-container .recent-news-box .post-category a{
+        color: #F9646B;
+        text-transform: capitalize;
+    }
+
+#Recent-News .recent-news-container .recent-news-box .article-title h3{
+    font-size:20px;
+    font-weight: 600;
+}
+#Recent-News .recent-news-container .recent-news-box  .article-date a{
+    font-size: 12px;
+    color: grey;
+}
+ /* Recent News section  ends here  */
+
+ /* Contact us section start here  */
+#Contact-us{
+    width: 100%;
+    padding: 4% 14%;
+    background: #012D5B;
+  
+}
+#Contact-us .Contact-container{
+    width: 100%;
+    height: 100%;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+#Contact-us .Contact-container .contact-text{
+    width: 48%;
+}
+#Contact-us .subheading{
+    color: #fff;
+
+}
+#Contact-us .Contact-container .contact-text p{
+    color: #fff;
+}
+#Contact-us .Contact-container  form{
+    width: 48%;
+    padding:  0 0 0 20px;
+}
+#Contact-us .Contact-container  form  .input-box{
+    background: transparent;
+    padding:8px;
+    border: 3px solid #174472;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+    width: 48%;
+
+}
+#Contact-us .Contact-container  form  .input-box::placeholder{
+    font-family:'Poppins',sans-serif;
+    color: #fff;
+}
+#Contact-us .Contact-container  form   .form-second-row .third-input-box{
+    width: 68%;
+}
+#Contact-us .Contact-container  form   .form-second-row .fourth-input-box{
+    width:28%;
+    font-weight: 400;
+    text-transform: none;
+    padding: 8px;
+    background: #F9646B;
+    border:none;
+    text-align: center;
+}
+
+ /* Contact us section ends  here  */
+
+/* Footer section starts  here  */
+ #Footer{
+    width: 100%;
+    padding:  6% 14% 0 14%;
+ }
+#Footer .footer-container{
+    width: 100%;
+    align-items: flex-start;
+
+}
+#Footer .footer-container .footer-logo-container{
+    width: 20%;
+}
+#Footer .footer-container .footer-logo-container p{
+    font-size: 13px;
+    line-height: 1.5;
+    margin:  8px 0;
+}
+
+#Footer .footer-container .footer-logo-container .social-links  a{
+    margin: 0px 16px 0 0;
+
+}
+#Footer .footer-container .footer-logo-container .social-links  i{
+    color: black;
+    font-size: 15px;
+
+}
+#Footer .footer-container  .footer-menus-container{
+    width: 70%;
+    align-items: flex-start;
+    color: #fff;
+}
+#Footer .footer-container  .footer-menus-container .footer-menu{
+    width: 31%;
+
+}
+#Footer .footer-container  .footer-menus-container .footer-menu .footer-menu-heading a{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: none;
+    color: #012D5B;
+}
+#Footer .footer-container  .footer-menus-container .footer-menu .footer-menu-heading{
+    margin:  0 0 8px 0;
+}
+#Footer .footer-container  .footer-menus-container .footer-menu a{
+    text-transform:none;
+    color: grey;
+    font-size: 13px;
+}
+#Footer .footer-container  .footer-menus-container .footer-menu a:hover{
+    color:#F9646B;
+}
+
+
+hr{
+    width: 100%;
+    height: 2px;
+    color: grey;
+    margin: 40px 0 16px 0;
+}
+
+#Footer .copyright-information{
+    text-align: center;
+    padding: 0 0 16px 0;
+    font-size: 13px;
+    color: grey;
+    
+}
+#Footer .copyright-information i ,a{
+    color: #F9646B;
+}
+/* Footer section ends here  */
+
+
+
+/* ************************* Blog page styling  starts here ******************************** */
+.page-image{
+    width: 100%;
+    height: 200px;
+    background: url("../media/hero/blog_hero.jpg")  0 0 no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+.page-image .page-name p{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+
+#blog-page{
+    width: 100%;
+    /* height: 900px; */
+    padding: 6%  15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#blog-page .blog-container{
+    width:65% ;
+    height: 100%;
+  
+}
+#blog-page  .blog-sidebar{
+    width: 30%;
+    height: 900px;
+    
+ 
+}
+#blog-page .blog-container .blog {
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+    margin: 0 0 40px 0;
+    
+}
+#blog-page .blog-container .blog .blog-thumbnail{
+    width: 100%;
+    height: 332px;
+}
+#blog-page .blog-container .blog  .blog-thumbnail img{
+    width: 100%;
+    height: 100%;
+    background-size:cover ;
+}
+
+#blog-page .blog-container .blog .blog-date{
+    position: absolute;
+    top: 280px;
+    left: 24px;
+    width:100px;
+    height:80px;
+    background: #F9646B;
+    border-radius: 5px;
+    justify-content: center;
+    flex-flow: column wrap;
+
+}
+#blog-page .blog-container .blog .blog-date p{
+    font-size: 29px;
+    font-weight: 600;
+    color: white;
+    line-height: 0.7;
+    padding: 5px 0;
+}
+
+
+#blog-page .blog-container .blog  .blog-content{
+    margin: 16px 0 0 0;
+    padding: 24px;
+}
+#blog-page .blog-container .blog  .blog-content .blog-title{
+    font-size: 24px;
+    font-weight: 500;
+    margin:  0 0 16px 0 ;
+}
+#blog-page .blog-container .blog  .blog-content  .blog-description-container {
+    margin: 0 0 16px 0;
+}
+#blog-page .blog-container .blog  .blog-content  .blog-description-container p{
+    line-height: 1.5;
+}
+#blog-page .blog-container .blog  .blog-content  .blog-category-comments{
+    align-items: flex-start;
+    width:257px;
+}
+#blog-page .blog-container .blog  .blog-content  .blog-category-comments  a ,i{
+    color: grey;
+
+}
+#blog-page .blog-container .blog  .blog-content  .blog-category-comments  a{
+    text-transform: none;
+}
+#blog-page .blog-container .Pagination-container{
+    width: 190px;
+    height: 30px;
+    margin:  0 auto;
+    color:grey;
+}
+#blog-page .blog-container .Pagination-container div:hover{
+    background: #F9646B;
+    color: #fff;
+}
+#blog-page .blog-container .Pagination-container .middel  :hover {
+    color: #fff;
+}
+#blog-page .blog-container .Pagination-container div{
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.2),-1px -1px 3px rgba(0,0,0,0.2);
+}
+
+
+/* ##################### Sidebar starts from here ################## */
+
+.blog-input-box{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2),-1px -1px 3px rgba(0,0,0,0.2);
+}
+
+.sidebar-btn{
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    margin:  16px  0;
+    letter-spacing: 5px;
+}
+.sidebar-btn:hover a{
+    color: #fff;
+}
+.widget{
+    margin: 0 0 40px 0;
+}
+
+
+.blog-sidebar .searchbar-container{
+    width: 100%;
+}
+.blog-sidebar .searchbar-container .search-bar  {
+    position: relative;
+}
+
+.blog-sidebar .searchbar-container .search-bar  .search-icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #F9646B;
+    width: 50px;
+    
+}
+.blog-sidebar .searchbar-container .search-bar  .search-icon i{
+    color: #fff;
+}
+
+
+
+
+/* Widgets heading  */
+.blog-sidebar .widget-heading{
+    font-size: 20px;
+    font-weight: 600;
+    margin:  0  0 16px 0;
+}
+
+/* Category widget  */
+.category-container{
+    width: 100%;
+    margin: 40px 0 ;
+}
+.category-container a{
+    width: 100%;
+    padding: 16px 0;
+    border-top: 1px solid grey;
+    color: #546475;
+    text-transform: none;
+    
+}
+
+/* Recent post widget  */
+.Widget-Recent-post {
+    width: 100%;
+ 
+    
+}
+.Widget-Recent-post .recent-post{
+    width: 100%;
+    height: 68px;
+    margin: 0 0 16px 0;
+}
+.Widget-Recent-post .recent-post .post-thumbnail{
+    width: 68px;
+    height: 100%;
+   
+}
+.Widget-Recent-post .recent-post .post-thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Widget-Recent-post .recent-post  .post-content{
+    width:74%;
+}
+.Widget-Recent-post .recent-post  .post-content .post-title-container .post-title{
+    font-weight: 600;
+}
+.Widget-Recent-post .recent-post  .post-content .post-date-time a{
+    text-transform: none;
+    color: grey;
+    font-size: 12px;
+}
+
+
+
+/* Tag widget starts here  */
+.tag-container a{
+    margin: 0 10px 16px 0;
+    text-transform: none;
+    color: grey;
+    padding: 8px 16px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.2),-1px -1px 3px rgba(0,0,0,0.2);
+
+}
+.tag-container a:hover{
+    background-color: #F9646B;
+    color: #fff;
+}
+
+
+/* Instagram feed widget start here  */
+.instagram-feed-container{
+    width: 100%;
+}
+.instagram-feed-container img{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    margin: 0 0 20px 0;
+}
+
+/* instagram widget ends here  */
+
+
+/* ####################### Sidebar ends  here       ################### */
+
+/* ************************* Blog page ends here ******************************** */
+
+
+
+
+
+/* *************************** Services page  starts here **************** */
+.service-welcome-image{
+    background: url('../media/hero/services_hero.jpg') no-repeat;
+}
+/* ***************************** Services page ends here *******************  */
+
+
+/* ******************************* About page styling starts here **************** */
+.about-welcome-image{
+    background: url("../media/hero/about_hero.jpg");
+}
+/* ******************************* About page styling ends here **************** */
+
+
+
+
+/* ******************************* Cases page starts here ************************** */
+.case-welcome-image{
+    background: url('../media/hero/cases_hero.jpg');
+}
+
+#case-study{
+    padding: 6% 14%;
+}
+#case-study .case-study-container{
+    
+    align-items: flex-start;
+}
+#case-study .case-study-container .case-study-box{
+    width: 32%;
+    height: 370px;
+    background-color: red;
+    margin-top: 30px;
+    position: relative;
+}
+#case-study .case-study-container .case-study-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#case-study .case-study-container .case-study-text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #fff;
+    padding: 20px ;
+}
+#case-study .case-study-container .case-study-text .case-study-heading{
+    font-weight: 600;
+}
+
+#case-study .case-study-container .case-study-text p{
+    font-size: 13px;
+}
+/* ********************************* Cases page ends here ***************************** * /
+
+
+
+
+/* *********************************** Contct page starts here ************************************ */
+
+
+.contact-welcome-image{
+    background: url("../media/hero/contact_hero.jpg");
+}
+#contact-wrapper{
+    padding: 6% 14%;
+}
+#contact-wrapper .our-location iframe{
+    width: 100%;
+    height: 280px;
+
+}
+#contact-wrapper .contact-container .form-address-container{
+    width: 100%;
+    align-items: flex-start;
+    margin: 40px 0 0 0;
+}
+#contact-wrapper .contact-container .form-address-container form{
+    width: 50%;
+  
+}
+#contact-wrapper .contact-container .form-address-container  address{
+    width: 30%;
+    height: 300px ;
+
+    
+}
+.contact-container .form-address-container .form-heading{
+    font-size: 24px;
+    margin:  0 0 16px 0;
+}
+.contact-container .form-address-container  .message-box{
+    width: 100%;
+    padding: 8px;
+}
+.contact-container .form-address-container  .input-box{
+    width: 48%;
+    padding: 8px;
+    border: 1px solid grey;
+    
+}
+.contact-container .form-address-container .subject{
+    width: 100%;
+    margin: 16px 0 ;
+}
+.contact-container .form-address-container .ghost-btn{
+    margin: 8px 0;
+}
+.address-container {
+ 
+    margin: 0 0 16px 0;
+}
+.address-box-container{
+    align-items: flex-start;
+    margin: 0 0 24px 0;
+}
+.address-box-container .address-icon{
+    width: 20%;
+    height: 20px;
+
+}
+.address-box-container .address-icon i{
+    font-size: 20px;
+}
+
+.address-box-container  .address-box{
+    width: 80%;
+    height: 40px;
+ 
+}
+.address-box-container  .address-box p{
+    color: #000;
+    margin: -5px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.address-box-container  .address-box .small-font-address{
+    font-size: 13px;
+    color: grey;
+    font-weight: 400;
+}
