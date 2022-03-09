@@ -2,6 +2,7 @@ let http = require("http");
 let fs = require("fs");
 let server = http.createServer(handleRequest);
 
+
 function handleRequest(request, response) {
   console.log(request.method, request.url);
   if (request.method === "GET" && request.url === "/index.html") {
@@ -31,14 +32,14 @@ function handleRequest(request, response) {
     // set header for css file
     response.setHeader("Content-Type", "text/css");
     // read css file and send it in response
-    fs.readFile("./assets/stylesheets/" + request.url, (err, content) => {
+    fs.readFile("../stylesheets/style.css", (err, content) => {
       if (err) return console.log(err);
       response.end(content);
     });
   }
-  if (request.methods === "GET" && request.url === "/media") {
-    response.setHeader("Content-Type", "media/jpeg");
-    fs.readFile(".assets/media" + request.url, (err, content) => {
+  if (request.methods === "GET" && request.url.split(".").pop() === "png") {
+    response.setHeader("Content-Type", "image/png");
+    fs.readFile("../media/team/", (err, content) => {
       if (err) return console.log(err);
       response.end(content);
     });
